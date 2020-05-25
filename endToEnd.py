@@ -5,25 +5,6 @@ import grooveParser
 import sys
 import ast
 
-# def getListOfFiles(dirName):
-#     try:
-#         listOfFile = os.listdir(dirName)
-#     except:
-#         raise SystemExit("The folder doesn't exist ...")
-#     allFiles = list()
-#     if len(listOfFile) == 0:
-#         raise SystemExit("The folder is empty ...")
-#     for entry in listOfFile:
-#
-#         fullPath = os.path.join(dirName, entry)
-#
-#         if os.path.isdir(fullPath):
-#             continue
-#         else:
-#             allFiles.append(fullPath)
-#
-#     return allFiles
-
 def parserType(fileName):
     try:
         source = open(f"{fileName}.py", "r")
