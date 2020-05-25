@@ -1,0 +1,67 @@
+[](# "This file is in MarkDown format (see daringfireball.net/projects/markdown)")
+
+[The GROOVE Tool Set](http://groove.sf.net)
+=====================
+
+Installation and use
+--------------------
+
+The bin subdirectory of the GROOVE directory (into which you unzipped the
+downloaded archive) contains jar files for each of the toolkit programs:
+e.g., Simulator.jar, Generator.jar. You can use these in either of the
+following ways:
+
+*  In a file manager window opened on the bin directory, double-click the jar file;
+
+*  In a command line window, run `java -jar GROOVE_PATH/bin/Program.jar [parameters]`,
+   where `GROOVE_PATH` is the groove directory and `Program` is the toolkit
+   program in question. If you use `-h` as parameter, you will get information
+   about the (other) command-line parameters.
+
+See usermanual.pdf for instructions on how to use the GROOVE Tool Set
+(including these installation instructions), or quick-reference.pdf for a quick
+non-comprehensive overview.
+
+Features
+--------
+
+Here is a brief list of the features supported by GROOVE. For details please
+consult the included user manual or quick reference poster,
+or the YouTube demos on [the GROOVE web site](http://groove.sf.net).
+
+*  Visual editing and simulation of graphs and graph transformation rules
+*  Global rule priorities or control program
+*  State space exploration using customised exploration strategies
+*  Model checking generated transition systems over CTL and LTL formulae
+*  Regular expression matching and label wildcards in transformation rules
+*  Primitive data types (int, string, bool and real) with corresponding operations
+*  Nested (i.e., quantified) rules
+*  Typing and inheritance through node types
+*  Prolog querying of graphs and state space
+
+Tools
+-----
+
+The installation includes the following tools:
+
+*  `Simulator(.jar)`: a GUI-based tool that lets you construct, simulate and
+   model check rule systems visually;
+*  `Generator(.jar)`: a command line tool that lets you simulate and model check
+   rule systems without the performance penalty of the GUI;
+*  `ModelChecker(.jar)`: a command line tool for CTL model checking;
+*  `PrologChecker(.jar)`: a command line tool for executing Prolog queries on an
+   explored grammar;
+*  `Imager(.jar)`: a command line or GUI tool that supports conversions from
+   GROOVE graphs and rules to other visual formats.
+*  `Viewer(.jar)`: a stand-alone (GUI) viewer for \GROOVE graphs and rules.
+
+Contact
+-------
+
+Any comments, bug reports and reactions are welcome, either through
+[the Sourceforge trackers](http://sf.net/projects/groove) or through an email to
+
+Arend Rensink
+University of Twente
+[http://www.cs.utwente.nl/~rensink](http://www.cs.utwente.nl/~rensink)
+[arend.rensink@utwente.nl](mailto:arend.rensink@utwente.nl)
