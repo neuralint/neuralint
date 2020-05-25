@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="checkDropoutBeforeBatchnorm-2">
+        <attr name="priority">
+            <string>3</string>
+        </attr>
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n3">
+            <attr name="layout">
+                <string>76 262 42 36</string>
+            </attr>
+        </node>
+        <node id="n18">
+            <attr name="layout">
+                <string>209 64 33 18</string>
+            </attr>
+        </node>
+        <node id="n20">
+            <attr name="layout">
+                <string>206 216 109 36</string>
+            </attr>
+        </node>
+        <node id="n19">
+            <attr name="layout">
+                <string>592 69 33 18</string>
+            </attr>
+        </node>
+        <node id="n21">
+            <attr name="layout">
+                <string>511 204 129 36</string>
+            </attr>
+        </node>
+        <node id="n0">
+            <attr name="layout">
+                <string>370 76 33 18</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>354 219 111 36</string>
+            </attr>
+        </node>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:Faults</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>cnew:flag:f006</string>
+            </attr>
+        </edge>
+        <edge from="n18" to="n18">
+            <attr name="label">
+                <string>type:Layer</string>
+            </attr>
+        </edge>
+        <edge from="n18" to="n3">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n18" to="n20">
+            <attr name="label">
+                <string>has-a</string>
+            </attr>
+        </edge>
+        <edge from="n18" to="n0">
+            <attr name="label">
+                <string>next</string>
+            </attr>
+        </edge>
+        <edge from="n20" to="n20">
+            <attr name="label">
+                <string>type:Parameters</string>
+            </attr>
+        </edge>
+        <edge from="n20" to="n20">
+            <attr name="label">
+                <string>test:string:eq(type,"dropout")</string>
+            </attr>
+        </edge>
+        <edge from="n19" to="n19">
+            <attr name="label">
+                <string>type:Layer</string>
+            </attr>
+        </edge>
+        <edge from="n19" to="n21">
+            <attr name="label">
+                <string>has-a</string>
+            </attr>
+        </edge>
+        <edge from="n21" to="n21">
+            <attr name="label">
+                <string>type:Parameters</string>
+            </attr>
+        </edge>
+        <edge from="n21" to="n21">
+            <attr name="label">
+                <string>test:string:eq(type,"batch_norm")</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:Layer</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n1">
+            <attr name="label">
+                <string>has-a</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n19">
+            <attr name="label">
+                <string>next</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:Parameters</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>test:type = string:"activator"</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

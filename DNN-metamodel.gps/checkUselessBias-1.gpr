@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="checkUselessBias-1">
+        <attr name="priority">
+            <string>3</string>
+        </attr>
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n3">
+            <attr name="layout">
+                <string>175 213 42 36</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>493 98 33 18</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>240 94 33 18</string>
+            </attr>
+        </node>
+        <node id="n13">
+            <attr name="layout">
+                <string>289 214 61 36</string>
+            </attr>
+        </node>
+        <node id="n10">
+            <attr name="layout">
+                <string>461 210 129 36</string>
+            </attr>
+        </node>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>cnew:flag:f005</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:Faults</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>type:Layer</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n10">
+            <attr name="label">
+                <string>has-a</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n3">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n13">
+            <attr name="label">
+                <string>has-a</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>type:Layer</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n6">
+            <attr name="label">
+                <string>next|next.next|next.next.next</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>type:Bias</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>cnew:flag:checked</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>test:string:eq(type,"batch_norm")</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>type:Parameters</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

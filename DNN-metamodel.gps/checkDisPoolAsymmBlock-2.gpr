@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="checkDisPoolAsymmBlock-2">
+        <attr name="enabled">
+            <string>false</string>
+        </attr>
+        <attr name="priority">
+            <string>5</string>
+        </attr>
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n3">
+            <attr name="layout">
+                <string>66 180 42 36</string>
+            </attr>
+        </node>
+        <node id="n0">
+            <attr name="layout">
+                <string>90 376 666 36</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>677 55 33 18</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>123 292 103 36</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>28 29 295 36</string>
+            </attr>
+        </node>
+        <node id="n5">
+            <attr name="layout">
+                <string>121 438 180 36</string>
+            </attr>
+        </node>
+        <node id="n11">
+            <attr name="layout">
+                <string>478 296 103 36</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>503 51 51 18</string>
+            </attr>
+        </node>
+        <node id="n6">
+            <attr name="layout">
+                <string>227 217 271 36</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>355 113 33 18</string>
+            </attr>
+        </node>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:Faults</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>cnew:flag:f026</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:Parameters</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>test:or(or(string:eq(type,"averagepooling2d"),or(string:eq(type,"conv2d"),string:eq(type,"maxpooling2d"))),or(string:eq(type,"dense"),string:eq(type,"flatten")))</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:Layer</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n0">
+            <attr name="label">
+                <string>has-a</string>
+            </attr>
+            <attr name="layout">
+                <string>322 -5 659 62 499 356 11</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>id:a</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>type:Parameters</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>test:type = string:"conv2d"</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>id:c</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>type:Layer</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>test:or(int:neq(a.kernel_dim1,b.kernel_dim1),int:neq(a.filters,b.filters))</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n3">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n1">
+            <attr name="label">
+                <string>next+</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n7">
+            <attr name="label">
+                <string>next</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n4">
+            <attr name="label">
+                <string>has-a</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>type:Architecture</string>
+            </attr>
+        </edge>
+        <edge from="n5" to="n5">
+            <attr name="label">
+                <string>test:int:add(ConvCount,PoolCount) &gt;= 10</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>id:b</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>type:Parameters</string>
+            </attr>
+        </edge>
+        <edge from="n11" to="n11">
+            <attr name="label">
+                <string>test:type = string:"conv2d"</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>id:d</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:Layer</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n2">
+            <attr name="label">
+                <string>next+</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n11">
+            <attr name="label">
+                <string>has-a</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>type:Parameters</string>
+            </attr>
+        </edge>
+        <edge from="n6" to="n6">
+            <attr name="label">
+                <string>test:and(eq(type,"conv2d"),eq(type,string:"maxpooling2d"))</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>not:</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>type:Layer</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n6">
+            <attr name="label">
+                <string>has-a</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n1">
+            <attr name="label">
+                <string>next</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="rule" edgeids="false" edgemode="directed" id="checkMissingInits-1">
+        <attr name="priority">
+            <string>2</string>
+        </attr>
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n3">
+            <attr name="layout">
+                <string>247 216 42 36</string>
+            </attr>
+        </node>
+        <node id="n18">
+            <attr name="layout">
+                <string>35 52 470 54</string>
+            </attr>
+        </node>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>cnew:flag:f010</string>
+            </attr>
+        </edge>
+        <edge from="n3" to="n3">
+            <attr name="label">
+                <string>type:Faults</string>
+            </attr>
+        </edge>
+        <edge from="n18" to="n18">
+            <attr name="label">
+                <string>type:Learner</string>
+            </attr>
+        </edge>
+        <edge from="n18" to="n18">
+            <attr name="label">
+                <string>test:bool:eq(false,global_initializer)</string>
+            </attr>
+        </edge>
+        <edge from="n18" to="n3">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>
