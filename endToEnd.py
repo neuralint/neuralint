@@ -75,7 +75,7 @@ def checkInOutSize(inOut):
 def main():
     arguments = sys.argv
     if len(arguments) != 6:
-        raise SystemExit('usage: endtoend.py [input filename] [input size] [output size] [parser type] [output filename]')
+        raise SystemExit('usage: endToEnd.py [input filename] [input size] [output size] [parser type] [output filename]')
     else:
         file_folderName = arguments[1]
         inputSize = checkInOutSize(arguments[2])
