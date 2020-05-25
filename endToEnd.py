@@ -99,7 +99,7 @@ def main():
         output = parsDnnScript(fileName = os.path.splitext(file_folderName)[0], inputSize = inputSize ,outputSize = outputSize , parser=parserName)
         outputFile.write(output)
     else:
-        raise SystemExit("Error : input should be python script file or a folder name containing python script file(s)")
+        raise SystemExit("Error : input should be a python script file")
 if __name__ == '__main__':
     main()
 
