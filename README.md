@@ -6,7 +6,7 @@ A deep learning program as input must be written using `Tensorflow` or `Keras`. 
 
 `groove-x_x_x-bin` and `DNN-metamodel.gps` folders are the Groove toolset and type graph respectively which are needed for running `NeuraLint`.
 
-`Keras_graphs` and `TF_graphs` folders are also used for intermediate calculation and required to run `NeuraLint` tool.
+`Keras_graphs` and `TF_graphs` folders are also used for intermediate calculation and required to run `NeuraLint`.
 
 The tool is written in `Python` and it can be easily run in the command line. To use the toolset, please enter following options with running command:
 
@@ -26,7 +26,7 @@ $ python endToEnd.py [name of deep learning programs (.py)] [input size] [output
 ## Examples
 ### TensorFlow Example
 
-Following code is a sample `TensorFlow` script.
+The following code is a sample `TensorFlow` script:
 ```python
 import tensorflow as tf
 import click
@@ -134,7 +134,7 @@ if __name__ == '__main__':
     main()
 ```
 
-User can use following command to pars mentioned code using `NeuraLint`. 
+User can use the following command to parse above-mentioned code using `NeuraLint`: 
 
 ```
 $ python endToEnd.py tf_script.py [32,28,28,1] [32,10] tf result
@@ -154,7 +154,7 @@ Layer 12 ==> A learning layer should no longer include a bias when it is followe
 Layer 14 ==> Batchnorm layer should be before the dropout.
 ```
 ### Keras Example
-Following code is a sample `keras` script. 
+The following code is a sample `Keras` script:
 
 ```python
 from k.layers.convolutional import *
@@ -184,13 +184,13 @@ model.compile(loss = 'binary_crossentropy',
 model.fit(inputData,labelData)
 ```
 
-Again, user can use following command to pars mentioned code using `NeuraLint`. 
+Again, user can use the following command to parse mentioned code using `NeuraLint`. 
 
 ```
 $ python endToEnd.py keras_script.py [32,32,1] [32,1] keras result
 ```
 
-The result of `NeuraLint` is
+The result of `NeuraLint` is:
 
 ```
 keras_script.py
