@@ -198,3 +198,13 @@ keras_script.py
 Learner ==> The loss should be correctly defined and connected to the layer in accordance with its input conditions (i.e.shape and type)-post_activation
 Layer 7 ==> A processing layer that operates on a N-dimensional tensors, should receive a valid input tensor with exactly N-dimensional shape(missing flatten ).
 ```
+
+### Python library
+Moreover, it can be called inside a DL program as a Python library on the top of TensorFlow/Keras. The developer can import `NeuraLint` as a Python library and simply call it in his own code by feeding the DL model and receiving the analysis report. For example:
+```
+import neuraLint
+...
+
+report = neuraLint.check(model)
+print(report)
+```
