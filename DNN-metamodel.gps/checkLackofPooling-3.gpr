@@ -19,7 +19,7 @@
         </node>
         <node id="n1">
             <attr name="layout">
-                <string>333 286 324 36</string>
+                <string>338 286 314 36</string>
             </attr>
         </node>
         <node id="n4">
@@ -34,7 +34,7 @@
         </node>
         <node id="n5">
             <attr name="layout">
-                <string>31 83 180 36</string>
+                <string>83 92 75 18</string>
             </attr>
         </node>
         <edge from="n3" to="n3">
@@ -74,7 +74,7 @@
         </edge>
         <edge from="n1" to="n1">
             <attr name="label">
-                <string>test:or(eq(type,"maxpooling3d"),eq(type,"averagepooling3d"))</string>
+                <string>test:or(eq(type,"max_pooling3d"),eq(type,"average_pooling3d"))</string>
             </attr>
         </edge>
         <edge from="n4" to="n4">
