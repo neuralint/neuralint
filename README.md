@@ -140,7 +140,7 @@ User can use the following command to parse above-mentioned code using `NeuraLin
 $ python endToEnd.py tf_script.py [32,28,28,1] [32,10] tf result
 ```
 
-The result of `NeuraLint` is
+The output of `NeuraLint` is
 
 ```
 tf_script.py
