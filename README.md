@@ -1,8 +1,8 @@
 # NeuraLint
 
-`NeuraLint` is a toolset for verifying Deep Learning models using meta-modeling and graph transformations.
-This toolset performs verification of deep learning models that are specified using graph transformations by the Groove toolset.
-A deep learning program as input must be written using `Tensorflow` or `Keras`. First, the program is parsed to extract relevant information according to the meta-model. The model of the program is a graph that conforms to the type graph (meta-model). Then, the graph is verified by `Groove` as a model checker. The output graph of Groove is used to extract relevant Information for the final report.
+`NeuraLint` is a toolset for verifying Deep Learning (DL) models using meta-modeling and graph transformations.
+This toolset performs verification of DL models that are specified using graph transformations by the Groove toolset.
+A DL program as input must be written using `Tensorflow` or `Keras`. First, the program is parsed to extract relevant information according to the meta-model. The model of the program is a graph that conforms to the type graph (meta-model). Then, the graph is verified by `Groove` as a model checker. The output graph of Groove is used to extract relevant information for the final report.
 
 `groove-x_x_x-bin` and `DNN-metamodel.gps` folders are the Groove toolset and type graph respectively which are needed for running `NeuraLint`.
 
