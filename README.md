@@ -209,3 +209,20 @@ report = neuraLint.check(model)
 print(report)
 ```
 This library is in the `Python Library` folder. Please note that you should place `groove-x_x_x-bin` and `DNN-metamodel.gps` folders in its root prior to using it. An example is provided in `main-sample.py`.
+
+## Citation
+You can find the paper [here](https://dl.acm.org/doi/abs/10.1145/3470006) and the citation is as follows:
+
+    @article{nikanjam21neuraLint,
+    author = {Nikanjam, Amin and Braiek, Houssem Ben and Morovati, Mohammad Mehdi and Khomh, Foutse},
+    title = {Automatic Fault Detection for Deep Learning Programs Using Graph Transformations},
+    year = {2021},
+    issue_date = {January 2022},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {31},
+    number = {1},
+    issn = {1049-331X},
+    url = {https://doi.org/10.1145/3470006},
+    doi = {10.1145/3470006},
+    }
