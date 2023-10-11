@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gxl xmlns="http://www.gupro.de/GXL/gxl-1.0.dtd">
+    <graph role="type" edgeids="false" edgemode="directed" id="start6">
+        <attr name="$version">
+            <string>curly</string>
+        </attr>
+        <node id="n0">
+            <attr name="layout">
+                <string>944 62 206 72</string>
+            </attr>
+        </node>
+        <node id="n4">
+            <attr name="layout">
+                <string>454 94 140 96</string>
+            </attr>
+        </node>
+        <node id="n10">
+            <attr name="layout">
+                <string>274 288 185 144</string>
+            </attr>
+        </node>
+        <node id="n7">
+            <attr name="layout">
+                <string>51 300 110 48</string>
+            </attr>
+        </node>
+        <node id="n12">
+            <attr name="layout">
+                <string>60 508 102 72</string>
+            </attr>
+        </node>
+        <node id="n13">
+            <attr name="layout">
+                <string>578 512 68 48</string>
+            </attr>
+        </node>
+        <node id="n15">
+            <attr name="layout">
+                <string>1025 410 56 48</string>
+            </attr>
+        </node>
+        <node id="n16">
+            <attr name="layout">
+                <string>999 582 110 48</string>
+            </attr>
+        </node>
+        <node id="n8">
+            <attr name="layout">
+                <string>111 56 229 120</string>
+            </attr>
+        </node>
+        <node id="n1">
+            <attr name="layout">
+                <string>678 343 163 72</string>
+            </attr>
+        </node>
+        <node id="n2">
+            <attr name="layout">
+                <string>195 461 47 264</string>
+            </attr>
+        </node>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>type:Q-network</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>flag:checked</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n0">
+            <attr name="label">
+                <string>string:last_layer_activation</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n1">
+            <attr name="label">
+                <string>periodically_updates</string>
+            </attr>
+            <attr name="layout">
+                <string>525 -59 1004 104 759 379 11</string>
+            </attr>
+        </edge>
+        <edge from="n0" to="n15">
+            <attr name="label">
+                <string>send_action</string>
+            </attr>
+            <attr name="layout">
+                <string>745 -56 1004 104 1053 434 11</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>type:Hyperparameters</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>flag:checked</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>int:batchSize</string>
+            </attr>
+        </edge>
+        <edge from="n4" to="n4">
+            <attr name="label">
+                <string>int:epochCount</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>type:DQN</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>flag:checked</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>bool:action_indication</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>bool:is_update_eq_valid</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>real:alpha</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n10">
+            <attr name="label">
+                <string>real:gamma</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n1">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n8">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n4">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n10" to="n0">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>type:DRL-Program</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n7">
+            <attr name="label">
+                <string>flag:checked</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n2">
+            <attr name="label">
+                <string>has</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n10">
+            <attr name="label">
+                <string>uses</string>
+            </attr>
+        </edge>
+        <edge from="n7" to="n12">
+            <attr name="label">
+                <string>interacts-with</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>type:Environment</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>flag:checked</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n12">
+            <attr name="label">
+                <string>string:name</string>
+            </attr>
+        </edge>
+        <edge from="n12" to="n13">
+            <attr name="label">
+                <string>starts-by</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>type:Initialize</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n13">
+            <attr name="label">
+                <string>flag:checked</string>
+            </attr>
+        </edge>
+        <edge from="n13" to="n15">
+            <attr name="label">
+                <string>continues-by</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>type:Step</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>flag:checked</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n15">
+            <attr name="label">
+                <string>repeats</string>
+            </attr>
+            <attr name="layout">
+                <string>500 -38 1053 434 1107 429 1053 434 11</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n16">
+            <attr name="label">
+                <string>detect</string>
+            </attr>
+            <attr name="layout">
+                <string>546 -41 1053 434 1054 606 11</string>
+            </attr>
+        </edge>
+        <edge from="n15" to="n0">
+            <attr name="label">
+                <string>receive_state</string>
+            </attr>
+            <attr name="layout">
+                <string>367 -54 1053 434 1004 104 11</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>type:Terminalstate</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n16">
+            <attr name="label">
+                <string>flag:checked</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n15">
+            <attr name="label">
+                <string>reset</string>
+            </attr>
+            <attr name="layout">
+                <string>557 -32 1054 606 1053 434 11</string>
+            </attr>
+        </edge>
+        <edge from="n16" to="n13">
+            <attr name="label">
+                <string>close</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>type:Exploration</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>flag:checked</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>bool:update_exploration_rate</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>real:decay_factor</string>
+            </attr>
+        </edge>
+        <edge from="n8" to="n8">
+            <attr name="label">
+                <string>real:explorationRate</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>type:target-network</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>flag:checked</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n1">
+            <attr name="label">
+                <string>int:updateFrequency</string>
+            </attr>
+        </edge>
+        <edge from="n1" to="n0">
+            <attr name="label">
+                <string>Q-values_to_train</string>
+            </attr>
+            <attr name="layout">
+                <string>259 -53 759 379 1004 104 11</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>type:Faults</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>flag:f01</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>flag:f02</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>flag:f03</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>flag:f04</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>flag:f05</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>flag:f06</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>flag:f07</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>flag:f08</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>flag:f09</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>flag:f10</string>
+            </attr>
+        </edge>
+        <edge from="n2" to="n2">
+            <attr name="label">
+                <string>flag:f11</string>
+            </attr>
+        </edge>
+    </graph>
+</gxl>
